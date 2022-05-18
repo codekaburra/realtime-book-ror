@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Churches</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Ip</th>
+      <th>Mqtt Ip</th>
+      <th>Mqtt Port</th>
+      <th>Mqtt Topic</th>
+      <th>Address</th>
+      <th>Telephone</th>
+      <th>Sunday mass</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @churches.each do |church| %>
+      <tr>
+        <td><%= church.name %></td>
+        <td><%= church.ip %></td>
+        <td><%= church.mqtt_ip %></td>
+        <td><%= church.mqtt_port %></td>
+        <td><%= church.mqtt_topic %></td>
+        <td><%= church.address %></td>
+        <td><%= church.telephone %></td>
+        <td><%= church.sunday_mass %></td>
+        <td><%= link_to 'Show', church %></td>
+        <td><%= link_to 'Edit', edit_church_path(church) %></td>
+        <td><%= link_to 'Destroy', church, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Church', new_church_path %>

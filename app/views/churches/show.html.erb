@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @church.name %>
+</p>
+
+<p>
+  <strong>Ip:</strong>
+  <%= @church.ip %>
+</p>
+
+<p>
+  <strong>Mqtt Ip:</strong>
+  <%= @church.mqtt_ip %>
+</p>
+
+<p>
+  <strong>Mqtt Port:</strong>
+  <%= @church.mqtt_port %>
+</p>
+
+<p>
+  <strong>Mqtt Topic:</strong>
+  <%= @church.mqtt_topic %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @church.address %>
+</p>
+
+<p>
+  <strong>Telephone:</strong>
+  <%= @church.telephone %>
+</p>
+
+<p>
+  <strong>Sunday mass:</strong>
+  <%= @church.sunday_mass %>
+</p>
+
+<%= link_to 'Edit', edit_church_path(@church) %> |
+<%= link_to 'Back', churches_path %>

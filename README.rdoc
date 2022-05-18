@@ -1,0 +1,13 @@
+Project ©2016
+Ruby On Rails Database Web Server - Real Time Digital Content Reader for Church mass (IOS/Android devices)
+
+This is the database for admin to upload & arrange the ordering of digital contents. 
+Support Images & Texts
+
+
+
+How to start :
+
+`bin/rake db:migrate RAILS_ENV=development`
+
+`bin/rails server`
